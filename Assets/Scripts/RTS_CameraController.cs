@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class RTS_CameraController : MonoBehaviour
 {
-    public float panSpeed = 20f;
+    public float panSpeed = 0.20f;
     // Update is called once per frame
     void Update()
     {
