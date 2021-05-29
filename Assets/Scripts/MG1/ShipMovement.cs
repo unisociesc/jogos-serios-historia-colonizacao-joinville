@@ -9,9 +9,10 @@ public class ShipMovement : MonoBehaviour
     public float MovementSpeed = 1.0f;
     public float RotationSpeed = 1.0f;
     public float movementThresold = 10.0f;
+    public float maxMovement = 0.2f;
+    public float maxRotation = 0.2f;
 
     private Transform m_COM;
-    private float rotationDefault;
     private float verticalInput;
     private float movementFactor;
     private float horizontalInput;
@@ -22,7 +23,6 @@ public class ShipMovement : MonoBehaviour
 
     private void Start()
     {
-        rotationDefault = RotationSpeed;
         if (!m_COM)
         {
             m_COM = new GameObject("COM").transform;
@@ -35,10 +35,23 @@ public class ShipMovement : MonoBehaviour
         //Balance();
         Movement();
         Steer();
-        if (Mathf.Abs(steerFactor) > 0.2)
+        if (steerFactor > maxRotation)
         {
-            steerFactor /= 2;
+            steerFactor = maxRotation;
         }
+        else if (Mathf.Abs(steerFactor) < -maxRotation)
+        {
+            steerFactor = -maxRotation;
+        }
+
+        if (movementFactor > maxMovement)
+        {
+            movementFactor = maxMovement;
+        }
+        else if (movementFactor < -maxMovement)
+        {
+            movementFactor = -maxMovement;
+        } 
     }
 
     void Balance()
