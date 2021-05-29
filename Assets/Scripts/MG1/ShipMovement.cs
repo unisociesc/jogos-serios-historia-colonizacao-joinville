@@ -11,6 +11,7 @@ public class ShipMovement : MonoBehaviour
     public float movementThresold = 10.0f;
 
     private Transform m_COM;
+    private float rotationDefault;
     private float verticalInput;
     private float movementFactor;
     private float horizontalInput;
@@ -21,6 +22,7 @@ public class ShipMovement : MonoBehaviour
 
     private void Start()
     {
+        rotationDefault = RotationSpeed;
         if (!m_COM)
         {
             m_COM = new GameObject("COM").transform;
@@ -37,12 +39,6 @@ public class ShipMovement : MonoBehaviour
         {
             steerFactor /= 2;
         }
-
-        if (onWater)
-        {
-            steerFactor = 0;
-        }
-        
     }
 
     void Balance()
@@ -61,14 +57,23 @@ public class ShipMovement : MonoBehaviour
     
     void Steer()
     {
-        float speed = (onWater) ? RotationSpeed : 0.0f; 
-            horizontalInput = Input.GetAxis("Horizontal");
-            steerFactor = Mathf.Lerp(steerFactor, horizontalInput, Time.deltaTime / movementThresold);
-            transform.Rotate(0.0f, steerFactor * RotationSpeed,0.0f );
-        }
+        horizontalInput = Input.GetAxis("Horizontal");
+        steerFactor = Mathf.Lerp(steerFactor, horizontalInput, Time.deltaTime / movementThresold);
+        transform.Rotate(0.0f, steerFactor * RotationSpeed,0.0f );
+    }
 
-    void OnCollisionEnter(Collision collision)
+    private void OnCollisionStay(Collision collision)
     {
         onWater = (collision.gameObject.name == "oceano");
+    }
+
+    private void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.name == "MG1_MAPA")
+        {
+            movementFactor = 0;
+            steerFactor = 0;
+        }
+            
     }
 }
