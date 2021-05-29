@@ -176,7 +176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cd25dd4dcdf511b41ae09b252573ba9b, type: 3}
       propertyPath: m_Name
-      value: MG1_MapaMundo_2xSubdivide_APONTODEBALA
+      value: MG1_MAPA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd25dd4dcdf511b41ae09b252573ba9b, type: 3}
@@ -366,6 +366,8 @@ MonoBehaviour:
   MovementSpeed: 0.1
   RotationSpeed: 0.3
   movementThresold: 10
+  maxMovement: 0.2
+  maxRotation: 0.2
 --- !u!4 &928800397 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0758ed3669e98eb42b33266f5ae5db30, type: 3}
@@ -502,8 +504,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   COM: {x: 0, y: 0, z: 0}
   MovementSpeed: 0.3
-  RotationSpeed: 10
+  RotationSpeed: 1
   movementThresold: 10
+  maxMovement: 0.2
+  maxRotation: 0.2
 --- !u!65 &1561333437
 BoxCollider:
   m_ObjectHideFlags: 0
