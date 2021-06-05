@@ -37,6 +37,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - Bending: 0
     - RippleDensity: 3
     - RippleSpeed: 1
     - Slimness: 5
@@ -45,6 +46,6 @@ Material:
     - waveSize: 0.01
     - waveSpeed: 0.000005
     m_Colors:
-    - BaseColor: {r: 0, g: 0.6528134, b: 1, a: 0}
-    - RippleColor: {r: 0, g: 1, b: 0.7671809, a: 0}
+    - BaseColor: {r: 0.37254903, g: 0.6392157, b: 0.7254902, a: 0}
+    - RippleColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

@@ -2,15 +2,20 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = System.Random;
+using Random2 = UnityEngine.Random;
 
 public class ShipMovement : MonoBehaviour
 {
     public Vector3 COM;
     public float MovementSpeed = 1.0f;
     public float RotationSpeed = 1.0f;
+    public float WaveRotationSpeed = 0.1f;
     public float movementThresold = 10.0f;
     public float maxMovement = 0.2f;
     public float maxRotation = 0.2f;
+    public float timeToWave = 0.5f;
+    public float timeToWind = 0.5f;
 
     private Transform m_COM;
     private float verticalInput;
@@ -18,11 +23,16 @@ public class ShipMovement : MonoBehaviour
     private float horizontalInput;
     private float steerFactor;
     private bool onWater;
+    private float wave;
+    private float wind;
 
     // Update is called once per frame
 
     private void Start()
     {
+        wave = 0.0f;
+        InvokeRepeating("waveRandom", 2.0f, timeToWave);
+        InvokeRepeating("windRandom", 2.0f, timeToWind);
         if (!m_COM)
         {
             m_COM = new GameObject("COM").transform;
@@ -30,11 +40,22 @@ public class ShipMovement : MonoBehaviour
         }
     }
 
+    void waveRandom()
+    {
+        wave = Random2.Range(-WaveRotationSpeed, WaveRotationSpeed);
+    }
+
+    void windRandom()
+    {
+        wave = Random2.Range(-WaveRotationSpeed, WaveRotationSpeed);
+    }
+
     void Update()
     {
         //Balance();
         Movement();
         Steer();
+        Wave();
         if (steerFactor > maxRotation)
         {
             steerFactor = maxRotation;
@@ -52,6 +73,12 @@ public class ShipMovement : MonoBehaviour
         {
             movementFactor = -maxMovement;
         } 
+    }
+
+    void Wave()
+    {
+        steerFactor = Mathf.Lerp(steerFactor, wave, Time.deltaTime / movementThresold);
+        transform.Rotate(0.0f, steerFactor * wave,0.0f );
     }
 
     void Balance()
