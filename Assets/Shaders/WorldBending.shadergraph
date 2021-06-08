@@ -80,6 +80,9 @@
         },
         {
             "m_Id": "5f0925dc231247388cb01e65c12b8334"
+        },
+        {
+            "m_Id": "f1f50ef0caf24b058111c4cc4ee02bc9"
         }
     ],
     "m_GroupDatas": [],
@@ -298,8 +301,8 @@
     ],
     "m_VertexContext": {
         "m_Position": {
-            "x": 691.9999389648438,
-            "y": -55.000022888183597
+            "x": 692.0000610351563,
+            "y": -137.0
         },
         "m_Blocks": [
             {
@@ -315,7 +318,7 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 691.9999389648438,
+            "x": 692.0000610351563,
             "y": 200.0
         },
         "m_Blocks": [
@@ -567,6 +570,19 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
+    "m_ObjectId": "2357245cb4f64b7b9e00e6c76d55bae0",
+    "m_Id": 0,
+    "m_DisplayName": "Texture2D",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_BareResource": false
 }
 
 {
@@ -1455,10 +1471,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 200.99998474121095,
-            "y": 116.9999771118164,
+            "x": 152.99996948242188,
+            "y": 35.0,
             "width": 139.0,
-            "height": 33.999996185302737
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -2254,6 +2270,41 @@
         "z": 0.0
     },
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "f1f50ef0caf24b058111c4cc4ee02bc9",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -174.0,
+            "y": -3.0,
+            "width": 0.0,
+            "height": 0.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "2357245cb4f64b7b9e00e6c76d55bae0"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "d825675b8fdb45bcb971052d913237a3"
+    }
 }
 
 {

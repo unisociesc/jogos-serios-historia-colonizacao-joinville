@@ -37,7 +37,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Bending: 0
+    - Bending: 0.0005
     - RippleDensity: 3
     - RippleSpeed: 1
     - Slimness: 5
