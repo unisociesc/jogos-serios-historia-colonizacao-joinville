@@ -11,6 +11,7 @@ public class ShipMovement : MonoBehaviour
     public float MovementSpeed = 1.0f;
     public float RotationSpeed = 1.0f;
     public float WaveRotationSpeed = 0.1f;
+    public float WindForce = 0.01f;
     public float movementThresold = 10.0f;
     public float maxMovement = 0.2f;
     public float maxRotation = 0.2f;
@@ -47,7 +48,7 @@ public class ShipMovement : MonoBehaviour
 
     void windRandom()
     {
-        wave = Random2.Range(-WaveRotationSpeed, WaveRotationSpeed);
+        wave = Random2.Range(1, WindForce);
     }
 
     void Update()

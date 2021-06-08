@@ -109,7 +109,7 @@ Material:
     - _UVSec: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - ammount: 0.0005
+    - ammount: 0.0002
     m_Colors:
     - _BaseColor: {r: 0.13542235, g: 0.45999157, b: 0.048745498, a: 1}
     - _Color: {r: 0.016425446, g: 0.17886053, b: 0.003824023, a: 1}
