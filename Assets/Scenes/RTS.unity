@@ -626,11 +626,12 @@ MonoBehaviour:
   MovementSpeed: 1
   RotationSpeed: 1
   WaveRotationSpeed: 1
-  movementThresold: 10
+  WindForce: 2
+  movementThresold: 1
   maxMovement: 0.2
   maxRotation: 0.2
-  timeToWave: 0.5
-  timeToWind: 0.5
+  timeToWave: 10
+  timeToWind: 20
 --- !u!65 &1561333437
 BoxCollider:
   m_ObjectHideFlags: 0
