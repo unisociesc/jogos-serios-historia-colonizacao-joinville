@@ -11,7 +11,7 @@ public class ShipMovement : MonoBehaviour
     public float MovementSpeed = 1.0f;
     public float RotationSpeed = 1.0f;
     public float WaveRotationSpeed = 0.1f;
-    public float WindForce = 0.01f;
+    public float WindForce = 2.0f;
     public float movementThresold = 10.0f;
     public float maxMovement = 0.2f;
     public float maxRotation = 0.2f;
@@ -48,7 +48,7 @@ public class ShipMovement : MonoBehaviour
 
     void windRandom()
     {
-        wave = Random2.Range(1, WindForce);
+        wind = Random2.Range(0.5f, WindForce);
     }
 
     void Update()
@@ -93,7 +93,7 @@ public class ShipMovement : MonoBehaviour
         float speed = (onWater) ? MovementSpeed : 0.0f;
         verticalInput = Input.GetAxis("Vertical");
         movementFactor = Mathf.Lerp(movementFactor, verticalInput, Time.deltaTime / movementThresold);
-        transform.Translate(movementFactor * speed, 0.0f, 0.0f);
+        transform.Translate(movementFactor * speed * wind, 0.0f, 0.0f);
     }
     
     void Steer()
