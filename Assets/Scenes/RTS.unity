@@ -658,8 +658,8 @@ GameObject:
   - component: {fileID: 1561333439}
   - component: {fileID: 1561333438}
   - component: {fileID: 1561333437}
-  - component: {fileID: 1561333436}
   - component: {fileID: 1561333441}
+  - component: {fileID: 1561333436}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -682,13 +682,13 @@ MonoBehaviour:
   COM: {x: 0, y: 0, z: 0}
   MovementSpeed: 1
   RotationSpeed: 1
-  WaveRotationSpeed: 1
+  WaveRotationSpeed: 0.1
   WindForce: 2
-  movementThresold: 1
+  movementThresold: 10
   maxMovement: 0.2
   maxRotation: 0.2
-  timeToWave: 10
-  timeToWind: 20
+  timeToWave: 0.5
+  timeToWind: 0.5
 --- !u!65 &1561333437
 BoxCollider:
   m_ObjectHideFlags: 0
