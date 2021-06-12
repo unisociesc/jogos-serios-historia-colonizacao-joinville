@@ -3,7 +3,42 @@ guid: 17b8122dce7e9a441a3e8b40a3d60169
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color
+    second: {fileID: 2100000, guid: 4320943cac9464640bd8a51df408653f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: deb5f42ecc4b9564d94258d03d86685a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 418949d2270955548816f6200894b10b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 5ac5d4f4da30a54479fd649787cf6d52, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SANTACRUZ
+    second: {fileID: 2100000, guid: a7937c5d451b05d4084298d45df4497c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Salvador
+    second: {fileID: 2100000, guid: b391a86934871f1448e5df7206168b57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SantaHelena
+    second: {fileID: 2100000, guid: 0a4780aed7766a4458acdbf734a053ee, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,22 @@ guid: 996a2fc46bb24ba4ba1d055eb958b564
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferro
+    second: {fileID: 2100000, guid: 569b06b9716737146a72e8bd525829f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: f3540afad0f429a43a2730b778be908e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: d4e862b435aa9ae4a8e6248ce57e93d1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
