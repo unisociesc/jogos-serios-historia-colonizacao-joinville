@@ -105,7 +105,7 @@ public class ShipMovement : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        onWater = (collision.gameObject.name == "oceano");
+        onWater = true;
     }
 
     private void OnCollisionEnter(Collision col)
