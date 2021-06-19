@@ -51,7 +51,7 @@ public class ShipMovement : MonoBehaviour
         wind = Random2.Range(0.5f, WindForce);
     }
 
-    void Update()
+    void LateUpdate()
     {
         //Balance();
         Movement();
@@ -100,7 +100,7 @@ public class ShipMovement : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         steerFactor = Mathf.Lerp(steerFactor, horizontalInput, Time.deltaTime / movementThresold);
-        transform.Rotate(0.0f, steerFactor * RotationSpeed,0.0f );
+        transform.Rotate(0.0f, steerFactor * RotationSpeed, 0.0f );
     }
 
     private void OnCollisionStay(Collision collision)
