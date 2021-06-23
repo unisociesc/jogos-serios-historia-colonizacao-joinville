@@ -19,6 +19,6 @@ public class CompassTarget : MonoBehaviour {
         // Pega a direcao entre o compasso e a TargetArea
         Vector3 dir = (objScreenPos - rt.position).normalized;
         float angle = Mathf.Rad2Deg * Mathf.Atan2(dir.z, dir.x);
-        rt.rotation = Quaternion.AngleAxis(angle - 140, Vector3.forward);
+        rt.rotation = Quaternion.AngleAxis(angle - 145, Vector3.forward);
     }
 }
