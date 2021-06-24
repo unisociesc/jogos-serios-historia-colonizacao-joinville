@@ -5,7 +5,7 @@ using UnityEngine;
 public class CompassTarget : MonoBehaviour {
     
     RectTransform rt;
-    public Transform target; 
+    public Transform target;
 
     void Start() {
         rt = GetComponent<RectTransform>();
