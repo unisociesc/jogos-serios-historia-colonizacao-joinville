@@ -57,6 +57,8 @@ public class ShipMovement : MonoBehaviour
         Movement();
         Steer();
         Wave();
+        Debug.Log("wave factor: "+steerFactor);
+        Debug.Log("wind factor: "+wind);
         if (steerFactor > maxRotation)
         {
             steerFactor = maxRotation;
