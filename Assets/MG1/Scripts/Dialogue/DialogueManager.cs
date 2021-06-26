@@ -10,15 +10,21 @@ public class DialogueManager : MonoBehaviour {
     public GameObject uiObject;
 
     private Queue<string> sentences;
+    private DialogueTrigger tref;
+
+    CompassTarget compassTarget;
 
     // Start is called before the first frame update
     void Start() {
+        compassTarget = GetComponent<CompassTarget>();
+
         sentences = new Queue<string>();
     }
 
-    public void StartDialogue(Dialogue dialogue) {
+    public void StartDialogue(Dialogue dialogue, DialogueTrigger reft) {
         Debug.Log("Começou o dialogo!");
-        Time.timeScale = 0;
+
+        this.tref = reft;
         sentences.Clear();
 
         foreach (string sentence in dialogue.sentences) {
@@ -30,7 +36,6 @@ public class DialogueManager : MonoBehaviour {
 
     public void DisplayNextSentence() {
         if(sentences.Count == 0) {
-            Destroy(GameObject.FindWithTag("TargetArea"));
             EndDialogue();
             Time.timeScale = 1;
             return;
@@ -46,6 +51,7 @@ public class DialogueManager : MonoBehaviour {
 
     void EndDialogue() {
         Debug.Log("acabou aqui...");
+        tref.DestroyActor();
         uiObject.SetActive(false);
     }
 }

@@ -14,7 +14,7 @@ public class DialogueTrigger : MonoBehaviour
     }
 
     public void TriggerDialogue() {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        FindObjectOfType<DialogueManager>().StartDialogue(dialogue, this);
     }
 
     void OnTriggerEnter(Collider triggerCollider) {
@@ -22,5 +22,9 @@ public class DialogueTrigger : MonoBehaviour
             TriggerDialogue();
             uiObject.SetActive(true);
         }
+    }
+
+    public void DestroyActor() {
+        Destroy(gameObject);
     }
 }
