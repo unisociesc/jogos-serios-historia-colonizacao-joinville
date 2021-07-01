@@ -12,12 +12,12 @@ Projeto desenvolvido na extensão de Jogos Sérios da UNISOCIESC, a equipe optou
 
 Abordar o contexto histórico, etapa pro etapa, de como ocorreu a colonização da cidade de Joinville – município localizado na região norte do estado de Santa Catarina –, virtualizando o Museu nacional de Imigração e Colonização, proporcionando assim para o usuário ter a experiência de atuar ativamente nos momentos crucias da história. Dentro do museu, o jogador teria quatro mini-games, correspondentes a esses momentos importantes da história, diferentes entre si mas todos conectados entre si historicamente.
 
-- Mini-game 1: (1840) VIAGEM DO PRÍNCIPE FRANCISCO NA MISSÃO DE RETORNAR A FRANÇA OS RESTOS MORTAIS DE NAPOLEÃO
-- Mini-game 2: (1848) REFÚGIO NA INGLATERRA E NEGOCIAÇÃO DE TERRAS
-- Mini-game 3: (1850) DEMARCAÇÃO DE TERRAS
-- Mini-game 4: (1851-1852) CHEGADA DOS IMIGRANTES
+- Mini-game 1: (1840) Viagem do príncipe Francisco na missão de retornar a frança os restos mortais de napoleão;
+- Mini-game 2: (1848) Refúgio na Inglaterra e negociação de terras;
+- Mini-game 3: (1850) Demarcação de terras;
+- Mini-game 4: (1851-1852) Chegada dos imigrantes;
 
-### Status 📝
+<!--- ### Status 📝 
 
 Andamento do desenvolvimento dos mini-games; ajustes e demais melhorias não estão sendo consideradas na totalização do status.
 
@@ -26,7 +26,7 @@ Andamento do desenvolvimento dos mini-games; ajustes e demais melhorias não est
 - [ ] MINI-GAME 2
 - [ ] MINI-GAME 3
 - [ ] MINI-GAME 4 
-- [ ] ...
+- [ ] ...--->
 
 ## Poster
 
