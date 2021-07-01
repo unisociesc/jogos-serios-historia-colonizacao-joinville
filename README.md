@@ -10,7 +10,7 @@ Projeto desenvolvido na extensão de Jogos Sérios da UNISOCIESC, a equipe optou
 
 ## Objetivos 🎯
 
-Abordar o contexto histórico, etapa pro etapa, de como ocorreu a colonização da cidade de Joinville – município localizado na região norte do estado de Santa Catarina –, virtualizando o Museu nacional de Imigração e Colonização, proporcionando assim para o usuário ter a experiência de atuar ativamente nos momentos crucias da história. Dentro do museu, o jogador teria quatro mini-games, correspondentes a esses momentos importantes da história, diferentes entre si mas todos conectados entre si historicamente.
+Abordar o contexto histórico, etapa pro etapa, de como ocorreu a colonização da cidade de Joinville – município localizado na região norte do estado de Santa Catarina –, virtualizando o Museu nacional de Imigração e Colonização, proporcionando assim para o usuário ter a experiência de atuar ativamente nos momentos crucias da história. Dentro do museu, o jogador tera quatro mini-games correspondentes a esses momentos importantes da história, sendo eles diferentes entre si mas todos conectados historicamente.
 
 - Mini-game 1: (1840) Viagem do príncipe Francisco na missão de retornar a frança os restos mortais de napoleão;
 - Mini-game 2: (1848) Refúgio na Inglaterra e negociação de terras;
